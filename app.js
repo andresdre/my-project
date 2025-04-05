@@ -1,6 +1,3 @@
-const API_KEY = 'NVVEYKOLN2BZOSJR';
-const BASE_URL = 'https://www.alphavantage.co/query';
-
 async function fetchStockData(symbol) {
     try {
         const response = await fetch(`${BASE_URL}?function=TIME_SERIES_INTRADAY&symbol=${symbol}&interval=1min&apikey=${API_KEY}`);
